@@ -15,6 +15,7 @@ This example illustrates how to
 - read a specific field from the REST service's  JSON response using Camunda Spin
 - test the process from jUnit using [Camunda BPM Assert](https://docs.camunda.org/manual/latest/user-guide/testing/#camunda-assertions) 
 
+Also see related [product documentation](https://docs.camunda.org/manual/latest/reference/connect/http-connector/)
 
 ## The important parts
 On the service task set the implementataion to "Connector". The set the connector properties (method, headers, url) on the appearing tab as shown.
