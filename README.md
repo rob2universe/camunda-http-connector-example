@@ -53,7 +53,7 @@ If you are starting form a Spring Boot project, you need to include the dependen
 ```
 
 ### Unit Test
-Run the JUnit [SpringBootTest](src/test/java/processtest/ProcessUnitTest) in your IDE or using:
+Run the [jUnit test](src/test/java/processtest/ProcessUnitTest) in your IDE or using:
 ```
 mvn clean test
 ```
