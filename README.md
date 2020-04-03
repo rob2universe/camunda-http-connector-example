@@ -1,7 +1,7 @@
 # Camunda BPM http connector usage example  
 
 This example illustrates the invocation of a REST service from a service task in Camunda BPM using the http connector.
-The example uses a Camunda [Spring Boot deployment](https://docs.camunda.org/manual/latest/user-guide/spring-boot-integration/) but should work in the same way on other dpeloyments.
+The example uses a Camunda [Spring Boot deployment](https://docs.camunda.org/manual/latest/user-guide/spring-boot-integration/) but should work in the same way on other deployments.
  
 No Java code is required. If you are comfortable with some Java / Spring then the recommended approach is to use a Spring bean instead of the connector, 
 as shown in the example [rest-service-task-spring](https://github.com/camunda-consulting/code/tree/master/snippets/rest-service-task-spring).
@@ -9,9 +9,9 @@ Spring beans are more flexible, e.g. allow to add custom error handling, and are
 
 The service invoked by the example is hosted at [reqres.in](https://reqres.in/). Many thanks to Ben Howdle for providing this developer playground.
 
-This example also illustrates how to 
+This example illustrates how to 
 - configure the connector
-- add the value of a process variable as parameter to the url
+- add the value of a process variable to the url
 - read a specific field from the REST service's  JSON response using Camunda Spin
 - test the process from jUnit using [Camunda BPM Assert](https://docs.camunda.org/manual/latest/user-guide/testing/#camunda-assertions) 
 
