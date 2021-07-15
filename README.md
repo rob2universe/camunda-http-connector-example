@@ -9,11 +9,24 @@ Spring beans are more flexible, e.g. allow to add custom error handling, and are
 
 The service invoked by the example is hosted at [reqres.in](https://reqres.in/). Many thanks to Ben Howdle for providing this developer playground.
 
-This example illustrates how to 
+The project includes two example process models, pone with a GET and one with a POST.
+
+### The GET example illustrates how to 
 - configure the connector
 - add the value of a process variable to the url
 - read a specific field from the REST service's  JSON response using Camunda Spin
-- test the process from jUnit using [Camunda BPM Assert](https://docs.camunda.org/manual/latest/user-guide/testing/#camunda-assertions) 
+- print the email field extracted from the response to the console using a script on the end event
+- test the process from jUnit using [Camunda BPM Assert](https://docs.camunda.org/manual/latest/user-guide/testing/#camunda-assertions)
+
+
+### The POST  example illustrates how to
+- configure the connector
+- add an authorization header fro http basic authentication if needed
+- add the value of a process variable to the message body (payload)
+- save the response
+- print the response to the console using a script on the end event
+- test the process from jUnit using [Camunda BPM Assert](https://docs.camunda.org/manual/latest/user-guide/testing/#camunda-assertions)
+
 
 Also see related [product documentation](https://docs.camunda.org/manual/latest/reference/connect/http-connector/)
 
@@ -23,8 +36,6 @@ A response of type JSON can be read and navigated using JavaScript or an express
 [BPMN Process](src/main/resources/httpConnector.bpmn)
 
 ![BPMN Process](resources/images/process.png)
-
-
 
 
 The prepackaged distribution includes everything needed. 
