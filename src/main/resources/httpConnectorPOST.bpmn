@@ -24,7 +24,7 @@ echo “username:password” | base64</bpmn:documentation>
         <camunda:connector>
           <camunda:inputOutput>
             <camunda:inputParameter name="payload">{
-    "name": "Andy Serkis",
+    "name": "${name}",
     "job": "Ring Keeper"
 }</camunda:inputParameter>
             <camunda:inputParameter name="method">POST</camunda:inputParameter>

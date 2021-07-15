@@ -31,12 +31,15 @@ The project includes two example process models, pone with a GET and one with a 
 Also see related [product documentation](https://docs.camunda.org/manual/latest/reference/connect/http-connector/)
 
 ## The important parts
-On the service task set the implementataion to "Connector". The set the connector properties (method, headers, url) on the appearing tab as shown.
-A response of type JSON can be read and navigated using JavaScript or an expression (shown).
+
+### GET Example
+
+On the service task set the implementation to "Connector". The set the connector properties (method, headers, url) on the appearing tab as shown.
+A response of type JSON can be read and navigated using JavaScript or an expression (shown).   
 [BPMN Process](src/main/resources/httpConnector.bpmn)
 
-![BPMN Process](resources/images/process.png)
-
+Connector configuration in CAMUNDA Modeler
+![Connector configuration in CAMUNDA Modeler](resources/images/process.png)
 
 The prepackaged distribution includes everything needed. 
 
@@ -63,6 +66,20 @@ If you are starting form a Spring Boot project, you need to include the dependen
 ...
     </dependencies>
 ```
+
+### POST Example
+
+Set the method value to POST instead and create an input parameter named  **payload** for the request body.
+Add a header field **Authorization** if needed. The value for this filed needs to be base 64 encoded and can be created for instance using these commands:
+
+Powershell: ```[System.Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes($user+":"+$pass))```  
+
+Linux: ```echo “username:password” | base64```
+
+
+Connector configuration for POST in CAMUNDA Modeler
+![Connector configuration for POST in CAMUNDA Modeler](resources/images/POSTConfig.png)
+
 
 ### Unit Test
 Run the [jUnit test](src/test/java/processtest/ProcessUnitTest.java) in your IDE or using:
