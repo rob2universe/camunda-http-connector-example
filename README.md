@@ -1,4 +1,4 @@
-# Camunda BPM http connector usage example  
+# Camunda Platform http connector usage example  
 
 This example illustrates the invocation of a REST service from a service task in Camunda BPM using the http connector.
 The example uses a Camunda [Spring Boot deployment](https://docs.camunda.org/manual/latest/user-guide/spring-boot-integration/) but should work in the same way on other deployments.
