@@ -9,7 +9,7 @@ Spring beans are more flexible, e.g. allow to add custom error handling, and are
 
 The service invoked by the example is hosted at [reqres.in](https://reqres.in/). Many thanks to Ben Howdle for providing this developer playground.
 
-The project includes two example process models, pone with a GET and one with a POST.
+The project includes two example process models, one with a GET and one with a POST.
 
 ### The GET example illustrates how to 
 - configure the connector
